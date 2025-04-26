@@ -1,482 +1,150 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gospodarstwo Ogrodnicze Lidia i Aleksander Morka</title>
-    <link rel="stylesheet" href="./css/index.css">
-
-    <meta name="author" content="Misztal" />
-    <meta name="keywords"
-        content="Lidia Morka, Aleksander Morka, kwiaty, byliny, ogrodowe, begonie, lobelia, surfinie, sunsatia, świerki conica, wierzba pleciona, wierzba japońska hakuro, róże, rododendron, prusznik, klony, berberysy" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gospodarstwo Ogrodnicze</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-
 <body>
-    <div class="bg"></div>
-    <div class="bgshadow"></div>
-    <nav class="nav nav-mobile">
-        <button class="burger-btn" aria-label="Menu">
-            <span class="burger-btn__bars"></span>
-        </button>
-
-        <div class="nav-mobile__box">
-            <button class="nav-mobile__box-close-btn">
-                <img src="./img/icon/x-bold.svg" alt="przycisk zamykający nawigacje">
-            </button>
-
-            <ul class="nav-mobile__links">
-                <li><a class="link" href="#drzewaikrzewy">DRZEWA I KRZEWY BALKONOWE</a></li>
-                <li><a class="link" href="#byliny">BYLINY</a></li>
-                <li><a class="link" href="#kwiatybalkonowe">KWIATY BALKONOWE</a></li>
-                <li><a class="link" href="#kontakt">KONTAKT</a></li>
-            </ul>
-        </div>
+  <header>
+    <h1>Gospodarstwo Ogrodnicze</h1>
+    <button id="theme-toggle">🌙</button>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul id="nav-links">
+        <li><a href="#onas">O nas</a></li>
+        <li><a href="#oferta1">Ozdobne</a></li>
+        <li><a href="#oferta2">Byliny</a></li>
+        <li><a href="#oferta3">Balkonowe</a></li>
+        <li><a href="#oferta4">Hortensje</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <nav class="nav nav-desktop">
-        <div class="wrapper">
-            <div class="nav-desktop__logo">
-                <a href="#"><img src="./img/logo.jpg" alt=""></a>
-            </div>
+  <section id="onas" class="fade-in-up">
+    <h2>O nas</h2>
+    <p style="text-align:center;">Witamy na stronie internetowej Gospodarstwa Ogrodniczego Lidii i Aleksandra Morki, na stronie znajdziejsz aktualne rośliny dostępne w naszym gospodarstwie. Gdy będą państwo zainteresowani którąś rośliną z naszej oferty zapraszamy do nas osobiście lub prosimy skontaktować się z nami w celu ustalenia szczegółów.</p>
+  </section>
 
-            <div class="nav-desktop__links">
-                <a href="#drzewaikrzewy" class="link">DRZEWA I KRZEWY OZDOBNE</a>
-                <a href="#byliny" class="link">BYLINY</a>
-                <a href="#kwiatybalkonowe" class="link">KWIATY BALKONOWE</a>
-                <a href="#kontakt" class="link">KONTAKT</a>
-            </div>
-        </div>
-    </nav>
-    <main class="main">
-        <div class="info">
-            Witamy na stronie internetowej Gospodarstwa Ogrodniczego Lidii i Aleksandra Morki, na stronie znajdziejsz
-            aktualne rośliny dostępne w naszym gospodarstwie. Gdy będą państwo zainteresowani którąś rośliną z naszej
-            oferty zapraszamy <a href="#kontakt">do nas osobiście</a> lub prosimy <a href="#kontakt">skontaktować</a>
-            się z nami w celu ustalenia szczegółów.
-        </div>
 
-        <div class="categoryName first" id="drzewaikrzewy">
-            <h1>Drzewa I Krzewy Ozdobne</h1>
-        </div>
-        <section class="product">
-            <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
-            <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
-            <div class="product-container">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/świerki conica.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">świerki conica</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/wierzba pleciona.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">wierzba pleciona</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/wierzba japońska -hakuro.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">wierzba japońska -hakuro</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/roznanapniu1.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Róża Na Pniu</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/roznanapniu2.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Róża Na Pniu</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/roznanapniu3.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Róża Na Pniu</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/roznanapniu4.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Róża Na Pniu</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/tuje.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">TUJA</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/tuja kulista.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">tuja kulista</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/trzmielina szczepiona.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">trzmielina szczepiona</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/sosna szczepiona.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">sosna szczepiona</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/róże okrywowe.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">róże okrywowe</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/rododendron.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">rododendron</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/prusznik.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">prusznik</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/lauro wiśnia czerwona.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">lauro wiśnia czerwona</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/klony.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">klony</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/katalpy i brzozy szczepione.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">katalpy i brzozy szczepione</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/jałowce płożące.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">jałowce płożące</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="./img/Sekcja1/berberysy.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">berberysy</h2>
-                    </div>
-                </div>
-        </section>
-        <div class="categoryName" id="byliny">
-            <h1>Byliny</h1>
-        </div>
-        <section class="product">
-            <button class="pre-btn byliny"><img src="img/arrow.png" alt=""></button>
-            <button class="nxt-btn byliny"><img src="img/arrow.png" alt=""></button>
-            <div class="product-container">
+  <section id="oferta1" class="fade-in-up">
+    <h2>Drzewa I Krzewy Ozdobne</h2>
+    <div class="galeria-przewijana">
+      <div class="karta"><img src="./img/ozdobne/berberysy.JPG" /><p>BERBERYSY</p></div>
+      <div class="karta"><img src="./img/ozdobne/jałowce płożące.JPG" /><p>jałowce płożące</p></div>
+      <div class="karta"><img src="./img/ozdobne/katalpy i brzozy szczepione.JPG" /><p>katalpy i brzozy szczepione</p></div>
+      <div class="karta"><img src="./img/ozdobne/klony.JPG" /><p>klony</p></div>
+      <div class="karta"><img src="./img/ozdobne/lauro wiśnia czerwona.JPG" /><p>lauro wiśnia czerwona</p></div>
+      <div class="karta"><img src="./img/ozdobne/prusznik.JPG" /><p>prusznik</p></div>
+      <div class="karta"><img src="./img/ozdobne/rododendron.JPG" /><p>rododendron</p></div>
+      <div class="karta"><img src="./img/ozdobne/roznanapniu1.JPG" /><p>róże okrywowe</p></div>
+      <div class="karta"><img src="./img/ozdobne/roznanapniu2.JPG" /><p>róże okrywowe</p></div>
+      <div class="karta"><img src="./img/ozdobne/roznanapniu3.JPG" /><p>róże okrywowe</p></div>
+      <div class="karta"><img src="./img/ozdobne/roznanapniu4.JPG" /><p>róże okrywowe</p></div>
+      <div class="karta"><img src="./img/ozdobne/róże okrywowe.JPG" /><p>róże okrywowe</p></div>
+      <div class="karta"><img src="./img/ozdobne/sosna szczepiona.JPG" /><p>sosna szczepiona</p></div>
+      <div class="karta"><img src="./img/ozdobne/trzmielina szczepiona.JPG" /><p>trzmielina szczepiona</p></div>
+      <div class="karta"><img src="./img/ozdobne/tuja kulista.JPG" /><p>tuja kulista</p></div>
+      <div class="karta"><img src="./img/ozdobne/tuje.JPG" /><p>tuje</p></div>
+      <div class="karta"><img src="./img/ozdobne/wierzba japońska -hakuro.JPG" /><p>wierzba japońska -hakuro</p></div>
+      <div class="karta"><img src="./img/ozdobne/wierzba pleciona.JPG" /><p>wierzba pleciona</p></div>
+      <div class="karta"><img src="./img/ozdobne/świerki conica.JPG" /><p>świerki conica</p></div>
+    </div>
+  </section>
 
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja2/b1.jpg" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">byliny</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja2/b2.jpg" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">byliny</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja2/b3.jpg" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">byliny</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja2/b4.jpg" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">byliny</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="categoryName" id="kwiatybalkonowe">
-            <h1>Kwiaty Balkonowe</h1>
-        </div>
-        <section class="product">
-            <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
-            <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
-            <div class="product-container">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/begonia dragon.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">begonia dragon</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/begonia zwisająca.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">begonia zwisająca</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/begonia1.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">begonia</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/begonia2.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">begonia</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/heliotrop.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">heliotrop</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/ipomea-liść ozdobny.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">ipomea-liść ozdobny</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/lobelia biała.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">lobelia biała</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/lobelia.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">lobelia</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/lobelia1.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">lobelia</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/pelargonie1.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">pelargonie</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/pelargonie2.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">pelargonie</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/pelargonie3.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">pelargonie</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/sunsatia.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">sunsatia</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/surfinie/s1.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">surfinie</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/surfinie/s2.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">surfinie</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/surfinie/s3.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">surfinie</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/surfinie/s4.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">surfinie</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/surfinie/s5.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">surfinie</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/surfinie/s6.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">surfinie</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/surfinie/s7.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">surfinie</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/surfinie/s8.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">surfinie</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/surfinie/s9.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">surfinie</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/surfinie/s10.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">surfinie</h2>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="img/Sekcja3/surfinie/s11.JPG" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">surfinie</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="categoryName" id="kontakt">
-            <h1>kontakt</h1>
-        </div>
-        <section class="contact">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.24313441294!2d20.89627196807647!3d52.23309689892981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1spl!2spl!4v1716883791368!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="contact__info">
-                <div class="contact__phone">
-                    <h3>Telefon:</h3>
-                    <span><a href="tel:+48555555555">555 555 555</a></span>
-                </div>
-                <div class="contact__email">
-                    <h3>Mail:</h3>
-                    <span><a href="mailto:poczta@wp.pl">poczta@wp.pl</a></span>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script src="./js/index.js"></script>
+  <section id="oferta2" class="fade-in-up">
+    <h2>Byliny</h2>
+    <div class="galeria-przewijana">
+      <div class="karta"><img src="./img/byliny/b1.jpg" /><p>Byliny</p></div>
+      <div class="karta"><img src="./img/byliny/b2.jpg" /><p>Byliny</p></div>
+      <div class="karta"><img src="./img/byliny/b3.jpg" /><p>Byliny</p></div>
+      <div class="karta"><img src="./img/byliny/b4.jpg" /><p>Byliny</p></div>
+    </div>
+  </section>
+
+  <section id="oferta3" class="fade-in-up">
+    <h2>Balkonowe</h2>
+    <div class="galeria-przewijana">
+      <div class="karta"><img src="./img/balkonowe/begonia dragon.JPG" /><p>begonia dragon</p></div>
+      <div class="karta"><img src="./img/balkonowe/begonia zwisająca.JPG" /><p>begonia zwisająca</p></div>
+      <div class="karta"><img src="./img/balkonowe/begonia1.JPG" /><p>begonia</p></div>
+      <div class="karta"><img src="./img/balkonowe/begonia2.JPG" /><p>begonia</p></div>
+      <div class="karta"><img src="./img/balkonowe/heliotrop.JPG" /><p>heliotrop</p></div>
+      <div class="karta"><img src="./img/balkonowe/ipomea-liść ozdobny.JPG" /><p>ipomea-liść ozdobny</p></div>
+      <div class="karta"><img src="./img/balkonowe/lobelia biała.JPG" /><p>lobelia biała</p></div>
+      <div class="karta"><img src="./img/balkonowe/lobelia.JPG" /><p>lobelia</p></div>
+      <div class="karta"><img src="./img/balkonowe/lobelia1.JPG" /><p>lobelia</p></div>
+      <div class="karta"><img src="./img/balkonowe/pelargonie1.JPG" /><p>pelargonie</p></div>
+      <div class="karta"><img src="./img/balkonowe/pelargonie2.JPG" /><p>pelargonie</p></div>
+      <div class="karta"><img src="./img/balkonowe/pelargonie3.JPG" /><p>pelargonie</p></div>
+      <div class="karta"><img src="./img/balkonowe/sunsatia.JPG" /><p>sunsatia</p></div>
+      <div class="karta"><img src="./img/balkonowe/surfinie/s1.JPG" /><p>surfinia</p></div>
+      <div class="karta"><img src="./img/balkonowe/surfinie/s2.JPG" /><p>surfinia</p></div>
+      <div class="karta"><img src="./img/balkonowe/surfinie/s3.JPG" /><p>surfinia</p></div>
+      <div class="karta"><img src="./img/balkonowe/surfinie/s4.JPG" /><p>surfinia</p></div>
+      <div class="karta"><img src="./img/balkonowe/surfinie/s5.JPG" /><p>surfinia</p></div>
+      <div class="karta"><img src="./img/balkonowe/surfinie/s6.JPG" /><p>surfinia</p></div>
+      <div class="karta"><img src="./img/balkonowe/surfinie/s7.JPG" /><p>surfinia</p></div>
+      <div class="karta"><img src="./img/balkonowe/surfinie/s8.JPG" /><p>surfinia</p></div>
+      <div class="karta"><img src="./img/balkonowe/surfinie/s9.JPG" /><p>surfinia</p></div>
+      <div class="karta"><img src="./img/balkonowe/surfinie/s10.JPG" /><p>surfinia</p></div>
+      <div class="karta"><img src="./img/balkonowe/surfinie/s11.JPG" /><p>surfinia</p></div>
+    </div>
+  </section>
+
+  <section id="oferta4" class="fade-in-up">
+    <h2>Hortensje</h2>
+    <div class="galeria-przewijana">
+      <div class="karta"><img src="./img/hortensje/Polar BEAU.jpg" /><p>Polar BEAU</p></div>
+      <div class="karta"><img src="./img/hortensje/limelight.jpg" /><p>limelight</p></div>
+      <div class="karta"><img src="./img/hortensje/vanille fraise.jpg" /><p>vanille fraise</p></div>
+      <div class="karta"><img src="./img/hortensje/diamant.jpg" /><p>Diamant Rouge</p></div>
+      <div class="karta"><img src="./img/hortensje/pinkachu.jpg" /><p>Pinkachu</p></div>
+      <div class="karta"><img src="./img/hortensje/mojito.jpg" /><p>mojito</p></div>
+      <div class="karta"><img src="./img/hortensje/skyfall.jpg" /><p>skyfall</p></div>
+      <div class="karta"><img src="./img/hortensje/hercules.webp" /><p>hercules</p></div>
+      <div class="karta"><img src="./img/hortensje/fire light.jpg" /><p>fire light</p></div>
+      <div class="karta"><img src="./img/hortensje/graffiti.jpg" /><p>graffiti</p></div>
+      <div class="karta"><img src="./img/hortensje/strong annabelle.jpg" /><p>strong annabelle</p></div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="fade-in-up">
+    <h2>Kontakt</h2>
+    <div class="kontakt-container">
+      <div class="kontakt-info">
+        <p><i class="fas fa-map-marker-alt"></i> Miejscowość 123, Polska</p>
+<p><i class="fas fa-phone-alt"></i> 123-456-789</p>
+<p><i class="fas fa-envelope"></i> kwiaty@ogrodnicze.pl</p>
+      </div>
+      <div class="kontakt-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.123456789!2d19.691234!3d51.405678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a123456789abc%3A0xabcdef1234567890!2sWojska%20Polskiego%20236%2C%2097-300%20Piotrk%C3%B3w%20Trybunalski!5e0!3m2!1spl!2spl!4v1612345678901!5m2!1spl!2spl"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Gospodarstwo Ogrodnicze</p>
+  </footer>
+
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("nav-links").classList.toggle("active");
+    });
+
+    const toggleBtn = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      toggleBtn.textContent = body.classList.contains("dark-mode") ? "☀️" : "🌙";
+    });
+  </script>
 </body>
-
 </html>
