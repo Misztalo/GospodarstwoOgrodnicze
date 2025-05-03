@@ -10,11 +10,28 @@
 </head>
 <body>
   <header>
-    <h1>Gospodarstwo Ogrodnicze</h1>
-    <button id="theme-toggle">🌙</button>
-    <nav>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
-      <ul id="nav-links">
+    <div class="header-top">
+      <h1>Gospodarstwo Ogrodnicze</h1>
+      <div class="header-buttons">
+        <button id="theme-toggle">🌙</button>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+      </div>
+    </div>
+  
+    <nav id="desktop-nav">
+      <ul>
+        <li><a href="#onas">O nas</a></li>
+        <li><a href="#oferta1">Ozdobne</a></li>
+        <li><a href="#oferta2">Byliny</a></li>
+        <li><a href="#oferta3">Balkonowe</a></li>
+        <li><a href="#oferta4">Hortensje</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  
+    <nav id="mobile-nav">
+      <div class="close-btn" id="close-menu">✕</div>
+      <ul>
         <li><a href="#onas">O nas</a></li>
         <li><a href="#oferta1">Ozdobne</a></li>
         <li><a href="#oferta2">Byliny</a></li>
@@ -25,14 +42,14 @@
     </nav>
   </header>
 
-  <section id="onas" class="fade-in-up">
-    <h2>O nas</h2>
-    <p style="text-align:center;">Witamy na stronie internetowej Gospodarstwa Ogrodniczego Lidii i Aleksandra Morki, na stronie znajdziejsz aktualne rośliny dostępne w naszym gospodarstwie. Gdy będą państwo zainteresowani którąś rośliną z naszej oferty zapraszamy do nas osobiście lub prosimy skontaktować się z nami w celu ustalenia szczegółów.</p>
-  </section>
+  <main>
+    <section id="onas" class="fade-in-up">
+      <h2>O nas</h2>
+      <p class="center-text">Witamy na stronie Gospodarstwa Ogrodniczego Lidii i Aleksandra Morki. Znajdziesz tu aktualną ofertę roślin. Zapraszamy do kontaktu lub odwiedzin.</p>
+    </section>
 
-
-  <section id="oferta1" class="fade-in-up">
-    <h2>Drzewa I Krzewy Ozdobne</h2>
+    <section id="oferta1" class="fade-in-up">
+      <h2>Drzewa I Krzewy Ozdobne</h2>
     <div class="galeria-przewijana">
       <div class="karta"><img src="./img/ozdobne/berberysy.JPG" /><p>BERBERYSY</p></div>
       <div class="karta"><img src="./img/ozdobne/jałowce płożące.JPG" /><p>jałowce płożące</p></div>
@@ -54,20 +71,20 @@
       <div class="karta"><img src="./img/ozdobne/wierzba pleciona.JPG" /><p>wierzba pleciona</p></div>
       <div class="karta"><img src="./img/ozdobne/świerki conica.JPG" /><p>świerki conica</p></div>
     </div>
-  </section>
+    </section>
 
-  <section id="oferta2" class="fade-in-up">
-    <h2>Byliny</h2>
+    <section id="oferta2" class="fade-in-up">
+      <h2>Byliny</h2>
     <div class="galeria-przewijana">
       <div class="karta"><img src="./img/byliny/b1.jpg" /><p>Byliny</p></div>
       <div class="karta"><img src="./img/byliny/b2.jpg" /><p>Byliny</p></div>
       <div class="karta"><img src="./img/byliny/b3.jpg" /><p>Byliny</p></div>
       <div class="karta"><img src="./img/byliny/b4.jpg" /><p>Byliny</p></div>
     </div>
-  </section>
+    </section>
 
-  <section id="oferta3" class="fade-in-up">
-    <h2>Balkonowe</h2>
+    <section id="oferta3" class="fade-in-up">
+      <h2>Balkonowe</h2>
     <div class="galeria-przewijana">
       <div class="karta"><img src="./img/balkonowe/begonia dragon.JPG" /><p>begonia dragon</p></div>
       <div class="karta"><img src="./img/balkonowe/begonia zwisająca.JPG" /><p>begonia zwisająca</p></div>
@@ -94,10 +111,10 @@
       <div class="karta"><img src="./img/balkonowe/surfinie/s10.JPG" /><p>surfinia</p></div>
       <div class="karta"><img src="./img/balkonowe/surfinie/s11.JPG" /><p>surfinia</p></div>
     </div>
-  </section>
+    </section>
 
-  <section id="oferta4" class="fade-in-up">
-    <h2>Hortensje</h2>
+    <section id="oferta4" class="fade-in-up">
+      <h2>Hortensje</h2>
     <div class="galeria-przewijana">
       <div class="karta"><img src="./img/hortensje/Polar BEAU.jpg" /><p>Polar BEAU</p></div>
       <div class="karta"><img src="./img/hortensje/limelight.jpg" /><p>limelight</p></div>
@@ -111,40 +128,27 @@
       <div class="karta"><img src="./img/hortensje/graffiti.jpg" /><p>graffiti</p></div>
       <div class="karta"><img src="./img/hortensje/strong annabelle.jpg" /><p>strong annabelle</p></div>
     </div>
-  </section>
+    </section>
 
-  <section id="kontakt" class="fade-in-up">
-    <h2>Kontakt</h2>
-    <div class="kontakt-container">
-      <div class="kontakt-info">
-        <p><i class="fas fa-map-marker-alt"></i> Miejscowość 123, Polska</p>
-<p><i class="fas fa-phone-alt"></i> 123-456-789</p>
-<p><i class="fas fa-envelope"></i> kwiaty@ogrodnicze.pl</p>
+    <section id="kontakt" class="fade-in-up">
+      <h2>Kontakt</h2>
+      <div class="kontakt-container">
+        <div class="kontakt-info">
+          <p><i class="fas fa-map-marker-alt"></i> Miejscowość 123, Polska</p>
+          <p><i class="fas fa-phone-alt"></i> 123-456-789</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:kwiaty@ogrodnicze.pl">kwiaty@ogrodnicze.pl</a></p>
+        </div>
+        <div class="kontakt-mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
       </div>
-      <div class="kontakt-mapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.123456789!2d19.691234!3d51.405678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a123456789abc%3A0xabcdef1234567890!2sWojska%20Polskiego%20236%2C%2097-300%20Piotrk%C3%B3w%20Trybunalski!5e0!3m2!1spl!2spl!4v1612345678901!5m2!1spl!2spl"
-          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Gospodarstwo Ogrodnicze</p>
   </footer>
 
-  <script>
-    document.getElementById("menu-toggle").addEventListener("click", function () {
-      document.getElementById("nav-links").classList.toggle("active");
-    });
-
-    const toggleBtn = document.getElementById("theme-toggle");
-    const body = document.body;
-
-    toggleBtn.addEventListener("click", () => {
-      body.classList.toggle("dark-mode");
-      toggleBtn.textContent = body.classList.contains("dark-mode") ? "☀️" : "🌙";
-    });
-  </script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
